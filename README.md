@@ -4,20 +4,55 @@ This project simulates various CPU scheduling algorithms to illustrate their beh
 
 ## Sample run
 
-<h4 align="center"> Easy Mode </h4>
+For each algorithm, the simulator generates Gantt charts, calculates average waiting times, and average turnaround times for a simulation period of 200 time units. This tool is useful for studying and comparing different scheduling strategies in operating systems.
+
 <p align="center">
-  <img width="620" height="345" src="https://github.com/qossayrida/huffmanCoding/assets/59481839/31749eee-0601-4940-a5e7-bb357a065255">
+<pre>
+<code>
+# Define a list of processes with their attributes (name, arrival time, burst time, priority, comeback time)
+process_list = [
+    MyCollection.Process("Process 1", 0, 10, 0, 2),
+    MyCollection.Process("Process 2", 1, 8, 0, 4),
+    MyCollection.Process("Process 3", 3, 14, 0, 6),
+    MyCollection.Process("Process 4", 4, 7, 0, 8),
+    MyCollection.Process("Process 5", 6, 5, 0, 3),
+    MyCollection.Process("Process 6", 7, 4, 0, 6),
+    MyCollection.Process("Process 7", 8, 6, 0, 9)
+]
+</code>
+</pre>
 </p>
 
-<h4 align="center"> Advanced Mode </h4>
+<h4 align="center"> First Come First Served (FCFS) </h4>
 <p align="center">
-  <img width="620" height="345" src="https://github.com/qossayrida/huffmanCoding/assets/59481839/916a6243-08bf-4324-b1ff-a036b3bff664">
+  <img width="620" height="345" src="https://github.com/qossayrida/CPU-Scheduling-Simulator/assets/59481839/d7738aaf-74e7-4ccd-95b1-914f7f745d98">
 </p>
 
-<h4 align="center"> Two Players Mode </h4>
+<h4 align="center"> Shortest Job First (SJF) </h4>
 <p align="center">
-  <img width="620" height="345" src="https://github.com/qossayrida/huffmanCoding/assets/59481839/09573f86-aea7-42c2-b8ad-bd0185a93965">
+  <img width="620" height="345" src="https://github.com/qossayrida/CPU-Scheduling-Simulator/assets/59481839/09c05c14-2e21-4e3e-97fc-bf155e2f360b">
 </p>
+
+<h4 align="center"> Shortest Remaining Time First (SRTF) </h4>
+<p align="center">
+  <img width="620" height="345" src="https://github.com/qossayrida/CPU-Scheduling-Simulator/assets/59481839/d31ec105-64ba-442c-9f1c-6aaa1cb3c575">
+</p>
+
+<h4 align="center"> Round Robin (RR) with a quantum of 5 </h4>
+<p align="center">
+  <img width="620" height="345" src="https://github.com/qossayrida/CPU-Scheduling-Simulator/assets/59481839/1f6b88ac-89a6-4924-8e5e-bb096d4c278a">
+</p>
+
+<h4 align="center"> Non-preemptive Priority Scheduling with aging </h4>
+<p align="center">
+  <img width="620" height="345" src="https://github.com/qossayrida/CPU-Scheduling-Simulator/assets/59481839/1a829421-1237-49ef-83a3-3f914058e897">
+</p>
+
+<h4 align="center"> Preemptive Priority Scheduling with aging </h4>
+<p align="center">
+  <img width="620" height="345" src="https://github.com/qossayrida/CPU-Scheduling-Simulator/assets/59481839/678e43ab-a7bb-4f08-88b6-92d64ad9689b">
+</p>
+
 
 ## 🔗 Links
 
